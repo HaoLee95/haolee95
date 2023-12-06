@@ -1,0 +1,84 @@
+body {
+	background-color: #000;
+	color: lightgray;
+	font-size: 28px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.result {
+	width: 100%;
+	min-height: 60px;
+	margin: 50px 0;
+	text-align: center;
+	font-size: 48px;
+}
+
+.image-wrapper {
+	float: left;
+	width: 50%;
+	text-align: center;
+	min-height: 280px;
+}
+
+.alphabet {
+	float: right;
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.letter {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 3px solid gray;
+}
+
+.letter:hover {
+	background-color: #222;
+	color: white;
+	border: 3px solid white;
+}
+
+.letter.discovered {
+	cursor: default;
+}
+
+.letter.fail {
+	color: #c00000;
+	border: 3px solid #c00000;
+	background: #330000;
+}
+
+.letter.success {
+	color: #00c000;
+	border: 3px solid #00c000;
+	background: #003300;
+}
+
+.reset {
+	display: inline-block;
+	margin-top: 30px;
+	color: green;
+	cursor: pointer;
+	font-size: 48px;
+	text-decoration: none;
+}
+
+.reset:hover {
+	color: #fff;
+}
